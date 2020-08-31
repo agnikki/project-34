@@ -8,6 +8,8 @@ function preload()
 }
 
 function setup() {
+  database = firebase.database();
+  console.log(database);
 	createCanvas(500, 500);
   dog=createSprite(40,10,10,10);
   dog.addImage(dog_img);
